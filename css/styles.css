@@ -853,18 +853,14 @@ label {
   margin-top: 10px;
   margin-left: 15px;
   margin-bottom: 0px;
-}
-.terms {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  /* identical to box height, or 171% */
-
-  letter-spacing: 0.03em;
-
-  color: #757575;
+  position: relative;
+  display: block;
+  padding-left: 8px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .send-form-info {
@@ -938,14 +934,6 @@ label {
   transition-property: outline, border-color;
 }
 
-.form-group-input-last {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  margin-top: 4px;
-  width: 16px;
-  height: 15px;
-}
-
 .conditions {
   color: #2196f3;
   text-decoration: underline;
@@ -953,4 +941,64 @@ label {
 
 .form-data {
   margin: 40px;
+}
+
+.form-group-input-last {
+  margin-top: 4px;
+  width: 16px;
+  height: 15px;
+  display: none;
+}
+
+.terms {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  position: absolute;
+  letter-spacing: 0.03em;
+  left: 24px;
+  top: 0;
+  color: #757575;
+}
+
+.form-group-label-last .form-group-input-last {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  height: 15px;
+  width: 16px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+}
+
+.form-group-label-last .form-group-input-last:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.form-group-label-last .form-group-input-last:checked ~ .checkmark:after {
+  display: block;
+}
+.test-checkmark {
+  position: absolute;
+  left: -3px;
+  top: -1px;
+  height: 14px;
+  width: 15px;
 }
