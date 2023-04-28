@@ -901,6 +901,9 @@ label {
   height: 40px;
   width: 448px;
   padding-left: 42px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: outline, border-color, fill;
 }
 .form-group-svg {
   position: absolute;
@@ -909,18 +912,19 @@ label {
   width: 18px;
   height: 18px;
   fill: #000000;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: outline, border-color, fill;
 }
 .form-group-input:focus,
-.form-group-input:focus-within + .form-group-svg
- {
+.form-group-input:focus-within + .form-group-svg {
   fill: #2196f3;
   border-color: #2196f3;
   outline: none;
-  
 }
 
-.form-group-input-feedback:focus{
- border-color: #2196f3;
+.form-group-input-feedback:focus {
+  border-color: #2196f3;
   outline: none;
 }
 .form-group-input-feedback {
@@ -929,6 +933,9 @@ label {
   margin-top: 4px;
   padding-left: 16px;
   padding-top: 12px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: outline, border-color;
 }
 
 .form-group-input-last {
