@@ -951,7 +951,7 @@ label {
   display: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, display;
+  transition-property: background-color, display,outline;
 }
 
 .terms {
@@ -986,11 +986,12 @@ label {
   border-radius: 2px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, content, position, display;
+  transition-property: background-color, content, position, display,outline;
 }
 
 .form-group-label-last .form-group-input-last:checked ~ .checkmark {
   background-color: #2196f3;
+  border-color: #2196f3;
 }
 
 .checkmark:after {
@@ -1005,7 +1006,7 @@ label {
 .test-checkmark {
   position: absolute;
   left: -3px;
-  top: -1px;
+  top: -4px;
   height: 14px;
   width: 15px;
 }
