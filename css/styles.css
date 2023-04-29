@@ -715,6 +715,7 @@ h2 {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: pointer-events, visibility, opacity, transform, pointer-events;
+  z-index: 4;
 }
 
 .close-data-modal {
