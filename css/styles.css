@@ -780,17 +780,16 @@ label {
   padding-left: 30px;
   padding-bottom: 10px;
   padding-top: 10px;
-  padding-right: 28px;
+  padding-right: 76px;
   letter-spacing: 0.06em;
   text-align: center;
- vertical-align: text-top;
- display: flex ;align-items: center;
+  vertical-align: text-top;
 }
 
 .test-newsletter {
   margin-left: 24px;
-   position:absolute;
-   right:28px;
+  position: absolute;
+  right: 28px;
 }
 
 .newsletter-e-mail {
